@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services de la salle de gym</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 960px;
+            margin: auto;
+        }
+        
+        .trainer-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 20px;
+            height: 350px;
+        }
+        
+        .trainer-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        @media (max-width: 576px) {
+            .trainer-img {
+                max-width: 100%;
+            }
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .service {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        .service h3 {
+            color: #007bff;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .service p {
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        
+        .btn-primary:focus {
+            box-shadow: none;
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        figure {
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            margin: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        figure:hover figcaption {
+            opacity: 1;
+        }
+        
+        figure img {
+            margin-bottom: 0;
+            transition: transform 0.3s ease;
+        }
+        
+        figure:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a class="navbar-brand" href="Home.html">M&MGYM</a><br>
+        <h1>Nos Services</h1>
+
+        <div class="service" id="service1">
+            <h3>Entraînement Personnel</h3>
+            <p>Nos entraîneurs personnels qualifiés sont là pour vous aider à atteindre vos objectifs de remise en forme.</p>
+            <div class="container mt-5">
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="trainer-card">
+                            <a href="coach fesmeknes.html">
+                                <img src=" coach12.webp " alt="Coach 1 " class="trainer-img " onclick="window.location.href='coach fesmeknes.html' ; ">
+                            </a>
+                            <h3>Coaches Fés-Méknes</h3>
+                            <p>Click sur la photo pour Visite tout les coach de Fés-Méknes</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="trainer-card ">
+                            <a href="coach casa stat.html">
+                                <img src="coachcasablanca.jpg " alt="Coach 2 " class="trainer-img " onclick="window.location.href='coach casa stat.html' ; ">
+                            </a>
+                            <h3>Coaches Casablanca-Settat</h3>
+                            <p>Click sur la photo pour Visite tout les coach de Casablanca-Settat</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="trainer-card ">
+                            <a href="coach rabat salle.html">
+                                <img src="coach16.avif " alt="Coach 3 " class="trainer-img " onclick="window.location.href='coach rabat salle.html' ; ">
+                            </a>
+                            <h3>Coaches Rabat-Salé-Kénitra</h3>
+                            <p>Click sur la photo pour Visite tout les coach de Rabat-Salé-Kénitra</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="trainer-card ">
+                            <a href="coach tanger tetouan.html">
+                                <img src="coachtangertetouan.jpg " alt="Coach 4 " class="trainer-img " onclick="window.location.href='coach tanger tetouan.html' ; ">
+                            </a>
+                            <h3>Coaches Tanger-Tétouan</h3>
+                            <p>Click sur la photo pour Visite tout les coach de Tanger-Tétouan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="# " class="btn btn-primary ">En savoir plus</a>
+            </div>
+
+            <div class="service " id="service2 ">
+                <h3>Cours de Groupe</h3>
+                <p>Rejoignez nos cours de groupe pour vous motiver et vous entraîner avec d'autres passionnés de fitness.</p>
+                <a href="# " class="btn btn-primary ">En savoir plus</a>
+            </div>
+
+            <div class="service " id="service3 ">
+                <h3>Équipements de Pointe</h3>
+                <p>Nous fournissons une large gamme d'équipements modernes pour répondre à tous vos besoins en matière d'exercice.</p>
+                <a href="# " class="btn btn-primary ">En savoir plus</a>
+            </div>
+
+            <div class="service " id="service4 ">
+                <h3>Programmes de Nutrition</h3>
+                <p>Nos experts en nutrition peuvent vous aider à élaborer un plan alimentaire personnalisé pour optimiser vos résultats.</p>
+                <div class="image-container ">
+                    <figure>
+                        <img src="tdkhim.webp " alt=" " height="250px " width="300px ">
+                        <figcaption>PRENDRE DU MUSCLE</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="tnchaf.jpg " alt=" " height="250px " width="300px ">
+                        <figcaption>PERDRE DU GRAS</figcaption>
+                    </figure>
+                </div>
+                <a href="nutrition.html " class="btn btn-primary ">En savoir plus</a>
+            </div>
+        </div>
+
+        <script>
+            const services = document.querySelectorAll('.service');
+
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.2
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            services.forEach(service => {
+                observer.observe(service);
+            });
+        </script>
+</body>
+
+</html>
